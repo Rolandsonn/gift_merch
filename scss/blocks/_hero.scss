@@ -25,7 +25,7 @@
   &__img-star {
     position: absolute;
     top: -4%;
-    left: 35%;
+    left: 40%;
   }
   &__btn {
     display: flex;
@@ -155,5 +155,17 @@
     position: absolute;
     top: -6%;
     right: 12%;
+  }
+}
+
+/* MEDAI QUERY max-width 1400px */
+@media screen and (max-width: 1400px) {
+  .hero {
+    padding: 100px 0;
+    &__img-star {
+      position: absolute;
+      top: -4%;
+      left: 46%;
+    }
   }
 }
