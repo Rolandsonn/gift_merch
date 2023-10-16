@@ -9,6 +9,10 @@
     max-width: 300px;
     max-height: 40px;
   }
+  &__menu {
+    width: 100%;
+    background: rgba(250, 251, 253, 0.44);
+  }
   &__btn-ru {
     cursor: pointer;
     font-family: Inter;
@@ -59,9 +63,6 @@
     gap: 40px;
     align-items: center;
   }
-  &__menu {
-    background: rgba(250, 251, 253, 0.44);
-  }
   &__inner {
     position: relative;
     background: rgba(250, 251, 253, 0.44);
@@ -96,7 +97,7 @@
   }
   &__img {
     position: absolute;
-    top: 5.2%;
+    top: 19.2%;
     right: 1px;
     z-index: 1;
     width: 270px;
@@ -155,9 +156,15 @@
     height: 570px;
   }
 }
+.navbar-toggler {
+  display: none;
+}
 
 /* MEDIA QUERY max-width 1400px */
 @media screen and (max-width: 1400px) {
+  .navbar-toggler {
+    display: none;
+  }
   .header {
     &__search {
       width: 294px;
@@ -188,6 +195,9 @@
       display: flex;
       justify-content: space-around;
     }
+    &__img {
+      top: 14.2%;
+    }
     &__bottom-item {
       width: 170px;
       padding: 0 20px;
@@ -205,6 +215,9 @@
 
 /* MEDIA QUERY max-width 1200px */
 @media screen and (max-width: 1200px) {
+  .navbar-toggler {
+    display: none;
+  }
   .header {
     &__search {
       width: 244px;
@@ -260,5 +273,49 @@
       max-width: 600px;
       height: 600px;
     }
+    &__img {
+      top: 12.2%;
+      height: 297px;
+    }
+  }
+}
+
+/* MEDIA QUERY max-width 992px */
+@media screen and (max-width: 992px) {
+  .header {
+    &__img-logo {
+      width: 176px;
+    }
+    &__menu {
+      display: none;
+    }
+    &__bottom {
+      margin-top: 0px;
+    }
+    &__search {
+      width: 170px;
+      height: 30px;
+      border: 2px solid;
+      background-color: transparent;
+    }
+    &__container {
+      display: none;
+    }
+    &__top {
+      justify-content: space-evenly;
+      padding: 0;
+    }
+    &__logo-search {
+      top: 7px;
+      left: 16px;
+    }
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar {
+    height: 70px;
+    margin-bottom: 70px;
+    background: rgba(250, 251, 253, 0.44);
   }
 }

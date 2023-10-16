@@ -1,0 +1,39 @@
+.box-creative {
+  position: relative;
+  height: 600px;
+}
+.creative {
+  position: absolute;
+  top: -35%;
+  z-index: -1;
+  padding: 180px 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img/bg_creative.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title {
+    color: #272525;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__img1 {
+    position: absolute;
+    top: 20px;
+  }
+  &__img2 {
+    position: absolute;
+    top: 20px;
+  }
+  &__img3 {
+    position: absolute;
+    top: 20px;
+  }
+  &__imgs {
+    position: relative;
+  }
+}
